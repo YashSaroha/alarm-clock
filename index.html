@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="bg-black text-white">
+    
+    <audio src="ringtone.mp3" id="ringtone"></audio>
+
+    <div class="container">
+        
+        <!-- TIME SECTION -->
+        <div class="box1">
+            <span id="date">date</span>
+        </div>
+
+        <div class="box2">
+            <span id="time">time</span>
+            <span id="zone"></span>
+        </div>
+
+
+        <!-- ALARM SECTION -->
+        <div id="alarm-text"></div>
+        <div class="alarm">
+            <form>
+                <div class="userInputs">
+                    <input id="inputHour" type="number" name="hour" placeholder="hours">
+                    <input id="inputMin" type="number" name="min" placeholder="minutes">
+                </div>
+                <button id="setAlarm">Set Alarm</button>
+            </form>
+        </div>
+        <button id="stopAlarm">Stop Alarm</button>
+        <button id="clearAlarm">Clear Alarm</button>
+
+
+        <!-- CREDITS SECTION-->
+        <div id="credits">DIGITAL CLOCK BY YASH</div>
+
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>

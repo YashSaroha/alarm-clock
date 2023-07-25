@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom ;
+    color: rgb(27, 58, 105);
+}
+
+.container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Play', sans-serif;
+}
+
+#date{
+    font-size: 30px;
+}
+
+.box1{
+    margin-top: 20px;
+
+}
+
+#time {
+    font-size: 8em;
+}
+#zone {
+    font-size: 30px;
+}
+
+
+/* ALARM SECTION */
+
+
+form{
+    text-align: center;
+}
+
+.userInputs{
+    display: block;
+    margin-bottom: 30px;
+}
+
+input{
+    padding: 10px 15px;
+    font-size: 15px;
+    width: 150px;
+    margin: 0px 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid rgb(27, 58, 105);
+    background-color: rgb(27, 58, 105);
+    color: white;
+}
+
+input::placeholder {
+    color: white;
+}
+
+#clearAlarm , #setAlarm , #stopAlarm{
+    padding: 10px 25px;
+    font-size: 18px;
+    border: 2px solid #04273a;
+    border-radius: 20px;
+    background-color: #dbe9ec;
+    color: #04273a;
+    cursor: pointer;
+    transform: scale(1);
+    transition-duration: 0.3s;
+    display: none;
+    margin: 0px auto;
+}
+/* input{
+    padding: 10px 15px;
+    font-size: 15px;
+    width: 150px;
+    margin: 0px 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid rgb(27, 58, 105);
+}
+
+#clearAlarm , #setAlarm , #stopAlarm{
+    padding: 10px 25px;
+    font-size: 18px;
+    border: 2px solid rgb(27, 58, 105);
+    border-radius: 20px;
+    background-color: rgb(27, 58, 105);
+    color: white;
+    cursor: pointer;
+    transform: scale(1);
+    transition-duration: 0.3s;
+    display: none;
+    margin: 0px auto;
+} */
+
+#setAlarm {
+    display: block;
+}
+#stopAlarm {
+    margin-bottom: 20px;
+}
+
+#clearAlarm:hover , #setAlarm:hover , #stopAlarm:hover{
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+}
+
+#alarm-text {
+    text-align: center;
+    margin: 62px 0px;
+    font-size: 18px;
+}
+
+
+/* CREDITS SECTION */
+
+#credits{
+    position: absolute;
+    bottom: 50px;
+    word-spacing: 7px;
+    letter-spacing: 3px;
+    color: white;
+}
